@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Square Nigeria Ltd supplies building materials, plumbing products, bathroom fittings, sanitary ware and pipes in Mararaba, Nasarawa State, Nigeria.">
+  <title>A Square Nigeria Ltd | Building Materials & Plumbing</title>
+  <style>
+    :root{--navy:#073b78;--blue:#0868b8;--sky:#eaf5ff;--yellow:#ffc928;--ink:#172638;--muted:#5b6877;--white:#fff;--line:#dce5ee;--shadow:0 12px 30px rgba(8,40,75,.12)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:90px} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#f7faff} img,video{display:block;max-width:100%} a{color:inherit} .container{width:min(1160px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:var(--navy);color:white;box-shadow:0 4px 16px rgba(0,0,0,.14)} .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}.brand{font-weight:800;letter-spacing:.3px;font-size:clamp(1rem,2.4vw,1.45rem);line-height:1.2}.brand span{color:var(--yellow)} .tagline{font-size:.82rem;color:#dbeafe;margin-top:5px}.navlinks{display:flex;gap:18px;flex-wrap:wrap;align-items:center}.navlinks a{text-decoration:none;font-size:.92rem;font-weight:700}.navlinks a:hover{color:var(--yellow)}
+    .hero{background:linear-gradient(120deg,rgba(3,35,75,.94),rgba(7,104,184,.82)),url('assets/images/blue-plumbing-pipes.jpg') center/cover;color:white;padding:100px 0 88px;text-align:center}.hero h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.12;margin:0 auto 18px;max-width:850px}.hero p{font-size:1.1rem;max-width:760px;margin:0 auto 28px;color:#edf6ff}.btn{display:inline-block;background:var(--yellow);color:#302600;padding:13px 22px;border-radius:8px;font-weight:800;text-decoration:none;border:0}.btn:hover{filter:brightness(.96);transform:translateY(-1px)}
+    section{padding:72px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 32px}.section-head h2{font-size:clamp(1.7rem,3vw,2.35rem);margin:0 0 10px;color:var(--navy)}.section-head p{margin:0;color:var(--muted)} .service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.service{background:white;padding:24px;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}.service .symbol{font-size:1.8rem}.service h3{margin:10px 0 6px;color:var(--navy)}.service p{margin:0;color:var(--muted);font-size:.94rem}
+    .gallery-section{background:#edf6ff}.filters{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:0 0 26px}.filter{cursor:pointer;border:1px solid #b9d5ef;background:white;color:var(--navy);padding:9px 15px;border-radius:30px;font-weight:700}.filter.active,.filter:hover{background:var(--navy);color:white}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.product-card{background:white;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}.product-card[hidden]{display:none}.product-card img{width:100%;height:280px;object-fit:cover;background:#e7edf3}.product-info{padding:17px 18px 20px}.product-info h3{margin:0 0 5px;color:var(--navy);font-size:1.08rem}.product-info p{margin:0;color:var(--muted);font-size:.93rem}.product-info a{display:inline-block;margin-top:12px;color:var(--blue);font-weight:800;text-decoration:none}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about-panel{background:white;border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:var(--shadow)}.about-panel h2{color:var(--navy);margin-top:0}.checklist{padding-left:20px}.checklist li{margin:8px 0}.video-section{background:#fff}.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.video-card{border:1px solid var(--line);border-radius:13px;background:#f7faff;overflow:hidden}.video-card video{width:100%;aspect-ratio:16/10;background:#0b1622;object-fit:contain}.video-card p{margin:0;padding:12px 14px;font-weight:700;color:var(--navy)}
+    .contact-section{background:linear-gradient(135deg,#073b78,#075ba6);color:white}.contact-section .section-head h2,.contact-section .section-head p{color:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{background:white;color:var(--ink);border-radius:15px;padding:25px;box-shadow:var(--shadow)}.contact-card h3{margin-top:0;color:var(--navy)}.contact-card p{margin:10px 0}.contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.contact-actions a{display:inline-block;text-decoration:none;background:#e8f4ff;color:var(--navy);font-weight:800;padding:9px 12px;border-radius:8px}.contact-actions a.whatsapp{background:#e5f8ec;color:#116c36}.small-note{font-size:.88rem;color:var(--muted)}footer{background:#052a55;color:#dbeafe;text-align:center;padding:23px 0;font-size:.9rem}footer strong{color:white}
+    @media (max-width:900px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery,.video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{align-items:flex-start;flex-direction:column}.navlinks{gap:12px}}
+    .gallery {
+     display: block;        
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+.product-card {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    background: #fff;
+}ia(max-width:600px){.hero{padding:75px 0 65px}.navlinks{gap:10px}.navlinks a{font-size:.84rem}.service-grid,.gallery,.video-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.product-card img{height:260px}section{padding:54px 0}}
+    .product-card img{width:100%;height:320px;object-fit:contain;background:#fff}
+  </style>
+</head>
+<body>
+<header><div class="container nav"><div><div class="brand">A SQUARE <span>NIGERIA LTD</span></div><div class="tagline">Building Materials • Plumbing • Construction</div></div><nav class="navlinks" aria-label="Main navigation"><a href="#home">Home</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#videos">Videos</a><a href="#about">About</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="container"><h1>Building Your Vision, One Project at a Time</h1><p>Explore our building materials, plumbing pipes, bathroom basins, sanitary ware and other products for your next project.</p><a class="btn" href="#gallery">Explore Our Product Gallery</a></div></section>
+<section id="services"><div class="container"><div class="section-head"><h2>Our Products & Services</h2><p>Products for building, plumbing, bathroom finishing and renovation. Contact us to confirm availability and specifications.</p></div><div class="service-grid"><article class="service"><div class="symbol">▤</div><h3>Plumbing Pipes</h3><p>Pipe supplies and flexible water hose for plumbing projects.</p></article><article class="service"><div class="symbol">◉</div><h3>Bathroom Basins</h3><p>Countertop and pedestal basin designs for different bathroom styles.</p></article><article class="service"><div class="symbol">▱</div><h3>Sanitary Ware</h3><p>Toilet models and bathroom fixtures for new builds and renovations.</p></article><article class="service"><div class="symbol">✧</div><h3>LED Mirrors</h3><p>Decorative illuminated mirrors for contemporary bathroom spaces.</p></article></div></div></section>
+<section class="gallery-section" id="gallery"><div class="container"><div class="section-head"><h2>Product Gallery</h2><p>Browse the product pictures. Use the category buttons to narrow the gallery, then contact us to ask about a product.</p></div><div class="filters" aria-label="Filter products"><button class="filter active" data-filter="all">All Products</button><button class="filter" data-filter="pipes">Pipes</button><button class="filter" data-filter="mirrors">LED Mirrors</button><button class="filter" data-filter="basins">Basins & Bathtub</button><button class="filter" data-filter="toilets">Toilets</button></div><div class="gallery">
+<article class="product-card" data-category="products">
+    <img src="assets/images/1b505582474b4733a3c52124c7fe9ca0.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/1cf697f630be4b958288b461feb38842.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/1d1c6aba82b54dc0865d11082abd8b6f.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/1d9f026148ee4bb7b09f2bd394cab7ab - Copy.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/1fe9035839364e21a4da0e57f78c6f0f - Copy.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/1ff47ccd04824411838d351fb4aa0bf9 - Copy.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/2a401981e0e74619b9900fc964b67f4c - Copy.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/2ad224dee11c4851ac5c934ebca87087 - Copy.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/02bb0c3b7da14f06994cd58d30936904.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/2d7cd4c60675446fa5c8435f28902d3b.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/2dbdd727334d4b3ba74ed1dd21c81534.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/3d210259671a4d7fa8cbdc4318f8b596.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/4c4e44e287ac4589937597029eb445bc.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/5aa5d3b01c13477e8564bbd41320af9a.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/6b20fc958777430fb5e9a3f0a9ce1132.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/6bd8c37ffd7a4f9ebed6f626e0d41570.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/6c87ea1a3c724af88b86fa53166ef069.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/6c4072b934954f6ebfea30b085f1b360.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/06d123dd9e2a41afb470c3783059472e - Copy.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/6daebafdca1f48b7a2bce86fa0b6a717.jpg" alt="Product">
+    <h3>Product</h3>
+
+<article class="product-card" data-category="products">
+    <img src="assets/images/6f1da5b237244d31a58dab320c2f1b76.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/6f058a185c0046d0b76e62bd210485c7.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/7a564a793844461296f5b29397032a82.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/7e3c8e99e4e74ac885eeb111ceb607ef.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/08b1209d4a7f4e4a991c221ef06b34ae.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/8c631c802d9a49cfaa392db16837595f.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/08ce946b31a14f739c30c5ba9caef1f7.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/8d3aed6c88a44180950d162fc4c436b8.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/8e6710f383834c468321fd0aa685f55d.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/8eb39fbd0fdb492ea81304d316becb5d.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/8ef78da8d3674ae7a2bb75adac162b40.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/9ae78be5101f494797a91b5ffed1e207.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/9befd5e83f2b4416b6a7a611113a6954.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/9c15c43b4dc74b71b22c5ffc87e35154.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/9ded832f9df5494f8958cb56ecbc3f55.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/9e23ed8e6a5b4a3ab11c5fca8d11cfee.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/10f808bdde2642eb8d54771e903304fb.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/13dc5f67ee8d4cd18a779ccdc4da3867.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/52b9de5d9afe4c488ca61791e65d8cb5.jpg" alt="Product">
+    <h3>Product</h3>
+</article>
+<article class="product-card" data-category="products">
+    <img src="assets/images/61cb4e3e7287492a9c2b92bb0f73e3b1.jpg" alt="Product">
+</article>
+</div></div></section>
+<section class="video-section" id="videos"><div class="container"><div class="section-head"><h2>Product Videos</h2><p>Watch the supplied product videos. Press play to view a video.</p></div><div class="video-grid">
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-01.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 01</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-02.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 02</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-03.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 03</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-04.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 04</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-05.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 05</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-06.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 06</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-07.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 07</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-08.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 08</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-09.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 09</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-10.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 10</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-11.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 11</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-12.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 12</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-13.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 13</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-14.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 14</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-15.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 15</p></article>
+<article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/product-video-16.mp4" type="video/mp4">Your browser does not support video playback.</video><p>Product Video 16</p></article>
+</div></div></section>
+<section id="about"><div class="container about-grid"><div class="about-panel"><h2>About A Square Nigeria Ltd</h2><p>A Square Nigeria Ltd provides building materials, plumbing products and bathroom fittings for customers working on construction, renovation and finishing projects.</p><p>Browse the gallery to see examples of products and contact us for current availability, sizes and specifications.</p></div><div class="about-panel"><h2>Why Contact Us?</h2><ul class="checklist"><li>Product pictures grouped by category</li><li>Phone and WhatsApp contact options</li><li>Convenient contact details for enquiries</li><li>Product videos in one place</li></ul></div></div></section>
+<section class="contact-section" id="contact"><div class="container"><div class="section-head"><h2>Contact A Square Nigeria Ltd</h2><p>Interested in our products or services? Contact us today.</p></div><div class="contact-grid"><div class="contact-card"><h3>Business Address</h3><p><strong>A Square Nigeria Ltd</strong></p><p>Mararaba, Karu LGA,<br>Nasarawa State, Nigeria</p><p class="small-note">Please contact us to confirm product availability and details before visiting.</p></div><div class="contact-card"><h3>Call or WhatsApp Us</h3><p><strong>+234 902 770 2884</strong></p><div class="contact-actions"><a href="tel:+2349027702884">Call Number 1</a><a class="whatsapp" href="https://wa.me/2349027702884" target="_blank" rel="noopener">WhatsApp Number 1</a></div><p><strong>+234 907 112 0203</strong></p><div class="contact-actions"><a href="tel:+2349071120203">Call Number 2</a><a class="whatsapp" href="https://wa.me/2349071120203" target="_blank" rel="noopener">WhatsApp Number 2</a></div></div></div></div></section>
+</main><footer><div class="container">© 2026 <strong>A Square Nigeria Ltd</strong>. All rights reserved.</div></footer>
+<script>
+  const filterButtons = document.querySelectorAll('.filter');
+  const cards = document.querySelectorAll('.product-card');
+  filterButtons.forEach(button => button.addEventListener('click', () => {
+    filterButtons.forEach(item => item.classList.remove('active'));
+    button.classList.add('active');
+    const filter = button.dataset.filter;
+    cards.forEach(card => { card.hidden = filter !== 'all' && card.dataset.category !== filter; });
+  }));
+</script>
+</body>
+</html>
